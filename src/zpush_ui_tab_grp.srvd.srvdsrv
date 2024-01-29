@@ -1,0 +1,5 @@
+@EndUserText.label: 'Table Group'
+define service ZPUSH_UI_TAB_GRP {
+  expose zpush_c_tab_grp  as TableGroup;
+  expose ZPUSH_R_COMM_ARR as TargetTenant;
+}

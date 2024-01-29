@@ -1,0 +1,24 @@
+managed implementation in class zbp_push_r_log_entry unique;
+strict ( 2 );
+
+define behavior for zpush_r_log_entry alias LogEntry
+persistent table zpush_log_entry
+etag master LocalLastChangedAt
+lock master
+authorization master ( global )
+{
+
+  field ( readonly, numbering : managed ) LogUUID;
+  field ( mandatory ) ActionType;
+  field ( readonly ) LastChangedAt, LocalLastChangedAt;
+
+  mapping for zpush_log_entry
+    {
+      LogUUID            = log_uuid;
+      ActionType         = action_type;
+      MessageType        = message_type;
+      MessageText        = message_text;
+      LocalLastChangedAt = local_last_changed_at;
+      LastChangedAt      = last_changed_at;
+    }
+}

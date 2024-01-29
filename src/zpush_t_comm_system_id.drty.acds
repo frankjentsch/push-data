@@ -1,0 +1,2 @@
+@EndUserText.label: 'Communication System ID'
+define type ZPUSH_T_COMM_SYSTEM_ID : abap.char(60)

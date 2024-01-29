@@ -1,0 +1,2 @@
+@EndUserText.label: 'CA for Target Tenant'
+define type ZPUSH_T_COMM_ARRANGEMENT_ID : abap.char(80)

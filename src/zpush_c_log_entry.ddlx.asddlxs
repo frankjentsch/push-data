@@ -1,0 +1,64 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Push Log Entry',
+    typeNamePlural: 'Push Log Entries',
+    title: { type: #STANDARD, value: 'ActionType' }
+  }
+}
+annotate entity zpush_c_log_entry with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Event',
+    position: 10
+  } ]
+  @UI.hidden: true
+  LogUUID;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #HIGH,
+    type: #FOR_ACTION, dataAction: 'Push',
+    label: 'Push'
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    importance: #HIGH,
+    label: 'Action Type'
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  @Search.defaultSearchElement: true
+  ActionType;
+
+  @UI.lineItem: [ {
+    position: 30 ,
+    importance: #HIGH,
+    label: 'Result'
+  } ]
+  @UI.identification: [ {
+    position: 30 ,
+    importance: #HIGH,
+    label: 'Result'
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  MessageType;
+
+  @UI.lineItem: [ {
+    position: 40 ,
+    importance: #HIGH,
+    label: 'Result Message'
+  } ]
+  @UI.identification: [ {
+    position: 40 ,
+    importance: #HIGH,
+    label: 'Result Message'
+  } ]
+  MessageText;
+
+}

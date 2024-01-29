@@ -1,0 +1,19 @@
+managed implementation in class zbp_push_r_tab_grp unique;
+strict ( 2 );
+
+define behavior for zpush_r_tab_grp alias TableGroup
+persistent table zpush_tab_grp
+lock master
+authorization master ( global )
+
+{
+  field ( readonly ) TableGroupName, TableGroupDescription;
+
+  action ( features : global, lock : none ) Push parameter ZPUSH_A_PUSH;
+
+  mapping for zpush_tab_grp
+    {
+      TableGroupName        = tab_grp_name;
+      TableGroupDescription = tab_grp_desc;
+    }
+}

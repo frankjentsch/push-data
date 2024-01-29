@@ -1,0 +1,47 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Push Table Group',
+    typeNamePlural: 'Push Table Groups',
+    title: { type: #STANDARD, value: 'TableGroupName' }
+  }
+}
+annotate entity zpush_c_tab_grp with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Table Group',
+    position: 10
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #HIGH
+  }, {
+    type: #FOR_ACTION,
+    dataAction: 'Push',
+    label: 'Push'
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    importance: #HIGH
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  @Search.defaultSearchElement: true
+  TableGroupName;
+
+  @UI.lineItem: [ {
+    position: 20 ,
+    importance: #HIGH
+  } ]
+  @UI.identification: [ {
+    position: 20 ,
+    importance: #HIGH
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  TableGroupDescription;
+}

@@ -1,0 +1,7 @@
+projection;
+strict ( 2 );
+
+define behavior for zpush_c_tab_grp alias TableGroup
+{
+  use action Push;
+}

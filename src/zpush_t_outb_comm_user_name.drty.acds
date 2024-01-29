@@ -1,0 +1,2 @@
+@EndUserText.label: 'Communication User'
+define type ZPUSH_T_OUTB_COMM_USER_NAME : abap.char(254)

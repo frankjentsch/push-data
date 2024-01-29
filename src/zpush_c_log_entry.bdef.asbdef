@@ -1,0 +1,6 @@
+projection;
+strict ( 2 );
+
+define behavior for zpush_c_log_entry alias LogEntry
+{
+}

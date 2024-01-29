@@ -1,0 +1,4 @@
+@EndUserText.label: 'Log Entry'
+define service ZPUSH_UI_LOG_ENTRY {
+  expose zpush_c_log_entry as LogEntry;
+}

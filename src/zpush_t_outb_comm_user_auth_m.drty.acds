@@ -1,0 +1,2 @@
+@EndUserText.label: 'Authentication Method'
+define type ZPUSH_T_OUTB_COMM_USER_AUTH_M : abap.char(2)
