@@ -1,2 +1,2 @@
 # push-data
-Push data from one Steampunk tenant to another one
+Push data of database tables from one Steampunk tenant to another one
