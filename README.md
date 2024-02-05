@@ -35,4 +35,16 @@ As a result of the installation procedure above, the ABAP system creates an inac
 
 To activate all development objects from the `ZPUSH_MAIN` package: 
 1. Click the mass-activation icon (<em>Activate inactive ABAP development objects</em>) in the toolbar.  
-2. In the dialog that appears, select all development objects in the transport request (that you created for the utility installation) and choose `Activate`. 
+2. In the dialog that appears, select all development objects in the transport request (that you created for the utility installation) and choose `Activate`.
+
+To transport the finally completed utility:
+1. Release the task and transport via ADT view `Transport Organizer`. As a result of this release, the developed objects of that software component are written into a hidden Git repository.
+2. Import the utility in a subsequent system: Open the Administrator's Fiori Launchpad of the subsequent system and start the app **Maintain Software Components**. Press the button *Clone* which imports all the released objects into the subsequent system.
+
+## How it works
+
+The push is based on a configured table group. A table group comprises 1 to many custom database tables.
+
+## How to obtain support
+This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
+
