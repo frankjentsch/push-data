@@ -6,7 +6,7 @@ The utility consists of two communication scenarios, one for **outbound** commun
 The utility supports only *custom-defined* database tables, but not SAP-delivered database tables. All types of database tables are supported. Please consider the implications if you are upload data of client-independent tables, configuration or system tables.
 
 The utility represents example code. Feel free to extend it depending on your needs. Limitations of the current implementation are:
-* The pushed data per database table **replaces** the existing data in trhe target tenant. There no other operations supported like **append** or **modify** (without deletion).
+* The pushed data per database table **replaces** the existing data in the target tenant. There no other operations supported like **append** or **modify** (without deletion).
 * The pushed data is transfered without paging. Therefore, the supported data volume is limited.
 
 Please grant the authorizations for the utility carefully. Only the start authorization of the SAP Fiori app is checked. There is no further authorization check on table level. This utility is intended to be used by adminstators or key users only.
