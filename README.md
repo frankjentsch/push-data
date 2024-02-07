@@ -7,7 +7,7 @@ The utility supports only *custom-defined* database tables, but not SAP-delivere
 
 The utility represents example code. Feel free to extend it depending on your needs. Limitations of the current implementation are:
 * The pushed data per database table **replaces** the existing data in the target tenant. There no other operations supported like **append** or **modify** (without deletion).
-* The pushed data is transfered without paging. Therefore, the supported data volume is limited.
+* The pushed data is transfered without paging. Therefore, the supported data volume is limited to the ABAP max. session size.
 
 Please grant the authorizations for the utility carefully. Only the start authorization of the SAP Fiori app is checked. There is no further authorization check on table level. This utility is intended to be used by adminstators or key users only.
 
