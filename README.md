@@ -43,7 +43,13 @@ To transport the finally completed utility:
 
 ## How it works
 
-The push is based on a configured table group. A table group comprises 1 to many custom database tables.
+The basic approach is as follows:
+* The push is based on a configured table group. A table group comprises 1 to many custom database tables.
+* A SAP Fiori app in the *source* tenant (= *push* principle) shows the configured table groups and provides a button to *push* the data completely to a target tenant.
+* The supported target tenants are determined based on the configured outbound Communication Arrangements of a certain Communication Scenario. The result is shown in a selection popup after pressing the *Push* button.
+* The data transfer (push to the target tenant) is implemented by a Remote Function Call (RFC) using the respective Communication Scenario.
+* The RFC execution in the target tenant replaces the data of all database tables of the pushed table group in the target tenant.
+* The same SAP Fiori app can be used to see the log of all performed data transfers in the target tenaant.
 
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
