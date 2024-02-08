@@ -49,7 +49,19 @@ The basic approach is as follows:
 * The supported target tenants are determined based on the configured outbound Communication Arrangements of a certain Communication Scenario. The result is shown in a selection popup after pressing the *Push* button.
 * The data transfer (push to the target tenant) is implemented by a Remote Function Call (RFC) using the respective Communication Scenario.
 * The RFC execution in the target tenant replaces the data of all database tables of the pushed table group in the target tenant.
-* The same SAP Fiori app can be used to see the log of all performed data transfers in the target tenaant.
+* The same SAP Fiori app can be used to see the log of all performed data transfers in the target tenant.
+
+### Example
+
+This Git repository contains also two database tables to test the data transfer:
+* ZEXAMPLE_TAB_1 - represents a typical table of a RAP Managed BO with UUID as primary key and different timestamp fields
+* ZEXAMPLE_TAB_2 - represents a table with a CHAR field as a primary key
+
+Class ZCL_EXAMPLE_TAB_GEN_TEST_DATA is a console app which can be used to fill test data in the source tenant into these two tables.
+
+### Configure Table Groups
+
+A table group defines a collection of custom database tables which will be pushed as one action later in the SAP Fiori app. In our example, we define three table groups for the two example tables. The same database table can be used in different table groups. The table group name and description need to be maintained in system table ZPUSH_TAB_GRP and the assigned tables need to be maintained in system table ZPUSH_TAB_GRP_I. You can use class ZCL_PUSH_TAB_GRP_TEST_DATA to create these system table entries. 
 
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
