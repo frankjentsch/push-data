@@ -75,7 +75,7 @@ Data preview of `ZPUSH_TAB_GRP_I`:
 
 A SAP Fiori app based on OData V4 Service Binding `ZPUSH_UI_TAB_GRP_O4` is provided to show all configured table groups and to offer a *Push* button to transfer the data.
 
-![](png/032%20-2%20Fiori2%20App.png)
+![](png/03%20-%20Fiori%20App.png)
 
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
