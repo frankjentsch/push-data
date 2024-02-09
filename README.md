@@ -63,6 +63,18 @@ Class `ZCL_EXAMPLE_TAB_GEN_TEST_DATA` is a console app which can be used to fill
 
 A table group defines a collection of custom database tables which will be pushed as one action later in the SAP Fiori app. In our example, we define three table groups for the two example tables. The same database table can be used in different table groups. The table group name and description need to be maintained in system table `ZPUSH_TAB_GRP` and the assigned tables need to be maintained in system table `ZPUSH_TAB_GRP_I`. You can use class `ZCL_PUSH_TAB_GRP_TEST_DATA` to create these system table entries. 
 
+Data preview of `ZPUSH_TAB_GRP`:
+
+![](png/01 - ZPUSH_TAB_GRP Data Preview.png)
+
+Data preview of `ZPUSH_TAB_GRP_I`:
+
+![](png/02 - ZPUSH_TAB_GRP_I Data Preview.png)
+
+### SAP Fiori App to Push the Data
+
+a
+
 ## How to obtain support
 This project is provided "as-is": there is no guarantee that raised issues will be answered or addressed in future releases.
 
