@@ -65,11 +65,11 @@ A table group defines a collection of custom database tables which will be pushe
 
 Data preview of `ZPUSH_TAB_GRP`:
 
-![](png/01 - ZPUSH_TAB_GRP Data Preview.png)
+![](png/01%20-%20ZPUSH_TAB_GRP%20Data%20Preview.png)
 
 Data preview of `ZPUSH_TAB_GRP_I`:
 
-![](png/02 - ZPUSH_TAB_GRP_I Data Preview.png)
+![](png/02%20-%20ZPUSH_TAB_GRP_I%20Data%20Preview.png)
 
 ### SAP Fiori App to Push the Data
 
