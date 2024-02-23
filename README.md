@@ -24,7 +24,7 @@ Use the abapGit plug-in to install the **Push Table Data Between Two Tenants** b
 2. In your ABAP cloud project, create the ABAP package `ZPUSH_MAIN` (using the superpackage `ZPUSH`) as the target package for the utility to be downloaded (leave the suggested values unchanged when following the steps in the package creation wizard).
 3. To add the <em>abapGit Repositories</em> view to the <em>ABAP</em> perspective, click `Window` > `Show View` > `Other...` from the menu bar and choose `abapGit Repositories`.
 4. In the <em>abapGit Repositories</em> view, click the `+` icon to clone an abapGit repository.
-5. Enter the following URL of this repository: `https://github.com/frankjentsch/dbtab-down-and-upload.git` and choose <em>Next</em>.
+5. Enter the following URL of this repository: `https://github.com/frankjentsch/push-data.git` and choose <em>Next</em>.
 6. Select the branch <em>refs/heads/main</em> and enter the newly created package `ZPUSH_MAIN` as the target package and choose <em>Next</em>.
 7. Create a new transport request that you only use for this utility installation (recommendation) and choose <em>Finish</em> to link the Git repository to your ABAP cloud project. The repository appears in the abapGit Repositories View with status <em>Linked</em>.
 8. Right-click on the new ABAP repository and choose `Pull ...` to start the cloning of the repository content. Note that this procedure may take a few seconds. 
