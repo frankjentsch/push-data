@@ -3,7 +3,7 @@ This Git repository provides an utility to push table data from one [SAP BTP ABA
 
 The utility consists of two communication scenarios, one for **outbound** communication to push the data and the other one for **inbound** communication. A SAP Fiori app is provided to trigger the push and to display the outbound logs and the inbound logs of the performed data transfer.
 
-The utility supports only *custom-defined* database tables, but not SAP-delivered database tables. All types of database tables are supported. Please consider the implications if you are upload data of client-independent tables, configuration or system tables.
+The utility supports only *custom-defined* database tables, but not SAP-delivered database tables. All types of database tables are supported. Please consider the implications if you are push data of client-independent tables, configuration tables or system tables.
 
 The utility represents example code. Feel free to extend it depending on your needs. Limitations of the current implementation are:
 * The pushed data per database table **replaces** the existing data in the target tenant. There no other operations supported like **append** or **modify** (without deletion).
